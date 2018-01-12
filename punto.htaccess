@@ -1,0 +1,14 @@
+# Do not remove this line or mod_rewrite rules and search engine friendly URLs will stop working
+# Do not remove this line or mod_rewrite rules and search engine friendly URLs will stop working
+RewriteEngine on
+RewriteCond %{HTTPS} !=on
+RewriteRule .* https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
+RewriteBase /
+Options -Indexes
+ErrorDocument 404 /error.html
+<IfModule mod_rewrite.c>
+RewriteEngine on
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}.php -f
+RewriteRule ^(.*)$ $1.php
+</IfModule>

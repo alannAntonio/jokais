@@ -1,0 +1,131 @@
+@font-face {
+    font-family: myFirstFont;
+    src: url('../fonts/Roboto-Regular.ttf');
+    font-weight: bold;
+}
+body, html{
+	width: 500px;
+	height: 10px;
+	overflow-x: hidden;
+	background-color: #3D504A;
+	font-family: 'Roboto Condensed', sans-serif;
+	background-color: #FFFFFF;
+}
+.contenedor_boleta{
+	width: 560px;
+	height: 733px;
+	background-image: url('back.png');
+	margin: 20px auto;
+	padding: 15px;
+	position: relative;
+}
+.logo{
+	width: 94%;
+	padding: 3%;
+	height: 100px;
+	background-color: #FFFFFF;
+	border-top-right-radius:15px;
+	border-bottom-right-radius: 15px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+.logo img{
+	width: 30%;
+	height: 53px;
+}
+.rut_jokais{
+	width: 200px;
+	height: 50px;
+	border: 2px solid #089E93;
+	padding: 8px;
+	text-align: center;
+}
+.rut_jokais p{
+	line-height: 1.1em;
+	margin: 0px;
+}
+.detalle_boleta{
+	width: 97%;
+	height: 500px;
+	padding: 1.5%;
+	background-color: #FFFFFF;
+	border-top-right-radius:15px;
+	border-bottom-right-radius: 15px;
+	top:15px;
+	position: relative;
+}
+.detalle_boleta p{
+	margin: 0px;
+	line-height: 1.3em;
+	font-size: 0.9em;
+}
+.detalle_boleta table{
+	font-size: 0.9em;
+	text-align: center;
+	margin-top: 20px;
+	color: #067068;
+}
+.detalle_boleta table th{
+	background-color: #089E93;
+	padding: 5px 10px;
+	font-size: 0.8em;
+	font-weight: 400;
+	color: #FFFFFF;
+	border-radius: 5px;
+}
+.fechas{
+	position: absolute;
+	width: 250px;
+	height: 300px;
+	top: 170px;
+	border-top: 2px #089E93 solid;
+	border-right: 2px #089E93 solid;
+	border-top-right-radius:15px;
+	padding-top: 40px;
+	color: #19002B;	
+}
+.fechas p{
+	margin-bottom: 5	px;
+}
+.montos{
+	width: 100%;
+}
+.montos table{
+	text-align: left;
+	margin-left: 270px;
+	font-size: 0.9em;
+	line-height: 0em;
+	padding: 0px;
+}
+.montos table td{
+	height: 25px;
+	padding: 0px 10px;
+}
+.montos table th{
+	background-color: #089E93;
+	padding: 10px;
+	font-weight: 600;
+	font-size: 1em;
+}
+.fechas p{
+	font-size: 1em;
+}
+.informacion{
+	position: absolute;
+	width: 200px;
+	top:330px;
+	text-align: justify;
+}
+.informacion h2{
+	font-size: 1em;
+}
+.pagina{
+	position: absolute;
+	top: 420px;
+	left: 300px;
+	color: #C41D1A;
+	border-top:1px #C41D1A dashed;
+	padding-top: 20px;
+	font-style: italic;
+}

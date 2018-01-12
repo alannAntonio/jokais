@@ -1,0 +1,270 @@
+html, body{
+	width: 100%;
+	height: 100%;
+	margin: 0px;
+	padding: 0px;
+	font-family: 'Roboto Condensed', sans-serif;
+	overflow:hidden;
+}
+body{
+	background-color: #262626;
+}
+h1{
+	font-size: 1.5em;
+}
+p{
+	font-size: 0.8em;
+}
+#options-container{
+	position: relative;
+	float: left;
+	z-index: 1;
+	margin: 0px;
+	padding: 0px;
+	height: 100%;
+	width: 90%;
+	padding:0px 5%;
+	background-color: #050505;
+	color: #E3E3E3;
+	text-decoration: none;
+	font-size: 1.5em;
+	display: flex;
+	align-items:center;
+	justify-content:center;
+	flex-wrap:wrap;
+	overflow-y:scroll;
+}
+#options-logo{
+	width:20%;
+	max-width: 150px;
+}
+#options-logo img{
+	width: 100%;
+}
+#options-title{
+	flex:100%;
+	text-align: center;
+	margin-top: 100px;
+}
+#options-list{
+	flex:100% 0 1;
+	max-width: 500px;
+}
+#options-list ul{
+	list-style: none;
+	line-height: 1.5em;
+	margin-left: -40px;
+	text-align: center;
+}
+#options-list ul li{
+	cursor: pointer;
+	font-size: 0.8em;
+	border: 1px solid #E3E3E3;
+	margin: 10px;
+}
+#show-container{
+	position: relative;
+	width: 100%;
+	height: 100%;
+	float: right;
+	z-index: 1;
+}
+#menu{
+	position: absolute;
+	width: 30px;
+	margin: 20px;
+	cursor: pointer;
+	z-index: 2;
+	display: none;
+}
+#menu img{
+	width: 100%;
+}
+#show-title{
+	width: 90%;
+	text-align: right;
+	color: #E3E3E3;
+	padding: 0px 5%;
+	height: 130px;
+}
+#show-title p{
+	margin-top: 0px;
+	line-height: 1em;
+}
+.btn-agregar{
+	background-color: #C70063;
+	width: 120px;
+	float: right;
+	padding: 5px;
+	border-radius: 4px;
+	cursor: pointer;
+	text-align: center;
+}
+.btn-agregar:hover{
+	background-color: #600045;
+}
+#table-contain{
+	width: 100%;
+	height:calc(100% - 150px);
+	margin: 0px;
+	border: black solid 1px;
+	padding: 0px;
+	overflow: scroll;
+}
+.table{
+	min-width: 100%;
+	text-align: left;
+	color: #ada99b;
+	background-color: #333333;
+	border-collapse: collapse;
+}
+.thead{2
+}
+.table tr:hover {
+	background-color: #222222;
+}
+.table td, .table th{
+	border: 1px solid #232323;
+	padding: 5px;
+}
+.table th{
+	background-color: #1f1f1f;
+}
+.file-light{
+	background-color: #454545;
+}
+#option-icon{
+	width: 80px;
+}
+#option-icon img{
+	margin-left: 10px;
+	cursor: pointer;
+}
+#confirmacion-eliminar-show, #editar-show, #agregar-show{
+	display: none;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	z-index: 3;
+}
+#confirmacion-eliminar-container, #editar-container, #agregar-container{
+	position: fixed;
+	background-color:rgba(38,38,38,0.97);
+	width: 90%;
+	height: 100%;
+	padding: 0px 5%;
+	z-index: 2;
+	color:#ada99b;
+	display: flex;
+	align-items:center;
+	justify-content:center;
+	flex-wrap:wrap;
+	font-size: 1.2em;
+	overflow: scroll;
+}
+#editar-container h1, #agregar-container h1{
+	flex:100% 0 0;
+	text-align: center;
+	font-size:1em;
+	margin-top:40px;
+}
+#x-editar, #x-eliminar, #x-agregar{
+	position: fixed;
+	color: #464646;
+	font-size: 1.2em;
+	z-index: 3;
+	top:10px;
+	right: 25px;
+	cursor: pointer;
+	background-color: #ada99b;
+	padding: 7px;
+	border-radius: 7px;
+}
+#confirmacion-eliminar{
+	border:1px solid #ada99b;
+	padding: 40px;
+	display: flex;
+	align-items:center;
+	justify-content:center;
+	flex-wrap:wrap;
+}
+#confirmacion-eliminar p{
+	flex: 100% 0 0;
+	text-align: center;
+}
+.opciones-eliminar{
+	flex: 100px 0 0;
+	border: 1px solid #ada99b;
+	margin:20px;
+	padding:10px;
+	text-align: center;
+	font-size: 0.7em;
+	cursor: pointer;
+}
+.opciones-eliminar:hover{
+	background-color: #ada99b;
+	border: 1px solid #262626;
+	color: #262626;
+}
+#modificar-fila, #cancelar-fila{
+	cursor: pointer;
+	background-color: #ada99b;
+	text-align: center;
+	padding:7px;
+	color: #262626;
+	margin-top: 10px;
+}
+#modificar-fila{
+	margin-bottom: 10px;
+}
+#cancelar-fila{
+	margin-bottom: 40px;
+}
+#modificar-fila:hover, #cancelar-fila:hover{
+	background-color: #161616;
+	color:#ada99b;
+}
+.table-modificar{
+	border:1px solid #ada99b;
+	padding:20px;
+	margin:0px auto 10px auto;
+}
+.table-modificar legend{
+	width: 100%;
+	text-align: center;
+}
+#formulario-modificar input,#formulario-modificar select, #formulario-agregar-usuario input, #formulario-agregar-usuario select{
+	height: 20px;
+	width: 120px;
+	font-size:0.8em;
+	background-color: #ada99b;
+	color: #262626;
+	border:none;
+	padding-left: 7px;
+}
+.contain1{
+	position: absolute;
+	z-index: 2;
+	width: 100%;
+	max-width:160px;
+	margin: 15px;
+	color: #969696;
+}
+.logo{
+	width:30%;
+	max-width: 200px;
+	min-width:130px;
+}
+.logo img{
+	width: 100%;
+}
+.info{
+font-size: 1.2em;
+font-style: italic;
+line-height: 1em;
+}
+.info p a, .info p{
+	text-decoration: none;
+	color: #E3E3E3;;
+	margin: 0px;
+}

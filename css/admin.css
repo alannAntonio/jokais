@@ -1,0 +1,79 @@
+html,body{
+	width: 100%;
+	height: 100%;
+	overflow-x: hidden;
+	font-family: 'Roboto Condensed' , sans-serif;
+	padding: 0px;
+	margin: 0px;
+	background:linear-gradient(90deg, #05635C, #089E93, #05635C);	
+}
+.main_contain{
+	width: 90%;
+	max-width: 700px;
+	height: 90%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: center;
+	margin: 0px auto;
+}
+.main_contain img{
+	width: 80%;
+	max-width: 250px;
+	padding: 10%;
+}
+.formulario_admin{
+	flex:1 1 90%;
+	max-width: 300px;
+	padding:10%;
+	margin: 0px auto;
+	border: 1px solid #089E93;
+	border-radius: 7px;
+	background-color: #FFFFFF;
+}
+.formulario_admin h1{
+	width: 100%;
+	margin: 0px;
+	line-height: 1.6em;
+	font-size: 1.2em;
+	font-weight: normal;
+	color: #05635C;
+}
+.formulario_admin input,input[type="submit"]{
+	padding: 14px 5%;
+	margin-bottom: 10px;
+	border: 1px solid #089E93;
+	color: #089E93;
+	font-weight: normal;
+	font-family: "Roboto Condensed";
+	font-size: 0.85em;
+}
+.formulario_admin input{
+	width: 89%;
+}
+.mensaje{
+	width: 100%;
+	color: #B40000;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 20px;
+}
+#error, #error2{
+	display: none;
+}
+#ingresar{
+	width: 100%;
+	height: 40px;
+	background-color: #089E93;
+	color: #FFFFFF;
+	border: none;
+	cursor: pointer;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+#ingresar:hover{
+	background-color: #05635C;
+	transition: 0.5s;
+}
